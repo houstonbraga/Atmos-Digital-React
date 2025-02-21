@@ -31,7 +31,7 @@ const menuItens = [
 
 export function Header() {
   return (
-    <header className="header py-3 top-0 bg-white shadow-md">
+    <header className="header py-3 top-0 bg-white shadow-md w-full">
       <GridContainer className="flex justify-between items-center">
         <div>
           <img src="/logo.svg" alt="logo-img" width={120} />

@@ -1,0 +1,14 @@
+.title-home {
+  font-family: "Graphik", sans-serif;
+  max-width: 800px;
+  text-align: center;
+}
+
+.title-home span {
+  color: rgb(184, 68, 128);
+}
+
+.text-home {
+  font-family: "Graphik", sans-serif;
+  font-weight: 400;
+}
