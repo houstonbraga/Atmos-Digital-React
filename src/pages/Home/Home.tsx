@@ -1,5 +1,6 @@
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header/Header";
+import { ShadowBg } from "../../components/ShadowBg";
 import { Carrousel } from "./components/Carrousel";
 import { HomeInfo } from "./components/HomeInfo";
 import './index.css'
@@ -13,6 +14,7 @@ export function Home() {
       />
 
       <Header />
+      <ShadowBg variant="shadowP"/>
 
       <div className="flex flex-col items-center justify-center flex-1 gap-8">
         <HomeInfo />

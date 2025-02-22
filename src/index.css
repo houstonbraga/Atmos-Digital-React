@@ -28,6 +28,24 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.shadow-bg {
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+  background: radial-gradient(circle, #b8448025 0%, #b8448000 70%);
+  border-radius: 50%;
+  filter: blur(50%);
+  position: absolute;
+  overflow: hidden !important;
+
+  /* 🔹 Centraliza no meio da tela */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 .max-width-container {
   max-width: 1216px;
 }
