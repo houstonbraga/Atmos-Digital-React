@@ -17,6 +17,11 @@
   src: url("./assets/fonts/Graphik-Regular.otf");
 }
 
+@font-face {
+  font-family: "Graphik-light";
+  src: url("./assets/fonts/Graphik-Light-Trial.otf");
+}
+
 body {
   background-color: #1B1B1B;
   color: white;
@@ -30,9 +35,59 @@ body {
 /*header*/
 
 .header {
-  background-color: #1b1b1b7a;
+  background-color: #1b1b1b00;
 }
 
-/*Home*/
+/*Buttons*/
+
+.button-primary {
+  background-color: transparent;
+  border: 1px solid #FAA819;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: #FAA819;
+}
+
+.button-secondary {
+  background-color: #FAA819;
+  border: 1px solid #FAA819;
+  transition: all 0.2s ease-in-out;
+}
+
+/*carrousel-home*/
+
+.separator-logo {
+  background: linear-gradient(to right, #B84480, #DF93BA);
+  width: 100%;
+  box-shadow: 0px 5px 22px #000000ad;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  -ms-transform: skewY(4deg); /* IE 9*/
+  -webkit-transform: skewY(4deg); /*safari*/
+  transform: skewY(4deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 50px;
+}
+
+.conjunto-palavras {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  animation: 15s slide2 infinite linear;
+}
+
+.palavra span {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
 
 

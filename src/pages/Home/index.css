@@ -1,3 +1,4 @@
+
 .title-home {
   font-family: "Graphik", sans-serif;
   max-width: 800px;
@@ -9,6 +10,16 @@
 }
 
 .text-home {
-  font-family: "Graphik", sans-serif;
-  font-weight: 400;
+  font-family: "Graphik-light", sans-serif;
+  font-size: 1.2rem;
+}
+
+@keyframes slide2 {
+  from {
+      transform: translateX(0);
+  }
+
+  to{
+      transform: translateX(100%);
+  }
 }
