@@ -1,6 +1,10 @@
+import { Header } from "../../components/Header/Header"
+
 const Projects = () => {
     return (
-        <h1>Projects</h1>
+        <div>
+            <Header />
+        </div>
     )
 }
 
