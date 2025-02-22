@@ -9,11 +9,11 @@ const menuItens = [
 
   {
     path: '/sobre',
-    title: 'Sobre Nós',
+    title: 'Sobre nós',
   },
 
   {
-    path: '/serviços',
+    path: '/servicos',
     title: 'Serviços',
   },
 

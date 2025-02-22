@@ -4,6 +4,7 @@ const Services = () => {
     return (
         <div>
             <Header />
+            <h1 className="text-3xl font-bold text-center mt-10">Página de Serviços</h1>
         </div>
     )
 }
