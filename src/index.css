@@ -29,10 +29,10 @@ body {
 }
 
 .shadow-bg {
-  width: 600px;
-  height: 600px;
+  width: 900px;
+  height: 900px;
   z-index: -1;
-  background: radial-gradient(circle, #b8448025 0%, #b8448000 70%);
+  background: radial-gradient(circle, #b8448018 0%, #b8448000 70%);
   border-radius: 50%;
   filter: blur(50%);
   position: absolute;
@@ -53,7 +53,7 @@ body {
 /*header*/
 
 .header {
-  background-color: #1b1b1b4b;
+  background-color: #1b1b1b56;
 }
 
 /*Buttons*/
