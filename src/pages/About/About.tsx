@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <ShadowBg variant='shadowG'/>
+      <ShadowBg variant="shadowG" />
       <GridContainer>
         <div className="flex justify-center items-center flex-col">
           <h1 className="font-gurajada text-5xl text-amber-400 mt-15 mb-30">
@@ -25,10 +25,16 @@ const About = () => {
 
             <img src="./site-about-hero.svg" alt="site-hero-about" />
           </div>
-          <p className="max-w-[900px] text-center">No mundo digital de hoje, ter uma presença forte na internet não é mais uma opção, é uma necessidade. A <span className="text-amber-400">Atmos Digital</span> é uma agência digital especializada em criar soluções inovadoras para empresas que desejam se destacar no ambiente online.</p>
+          <p className="max-w-[900px] text-center">
+            No mundo digital de hoje, ter uma presença forte na internet não é
+            mais uma opção, é uma necessidade. A{" "}
+            <span className="text-amber-400">Atmos Digital</span> é uma agência
+            digital especializada em criar soluções inovadoras para empresas que
+            desejam se destacar no ambiente online.
+          </p>
         </div>
       </GridContainer>
-      <ShadowBg variant='shadowM'/>
+      <ShadowBg variant="shadowM" />
     </>
   );
 };
