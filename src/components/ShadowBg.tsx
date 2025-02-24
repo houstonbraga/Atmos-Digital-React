@@ -6,7 +6,6 @@ type ShadowBgProps = {
 
 export function ShadowBg({ variant }: ShadowBgProps) {
     const shadowClass = classNames(
-        "shadow-bg",
         {
             "shadow-bg": variant === "shadowP",
             "shadow-right": variant === "shadowM",
@@ -15,6 +14,6 @@ export function ShadowBg({ variant }: ShadowBgProps) {
     );
 
     return (
-        <div className={shadowClass}></div>
+        <div className={shadowClass} data-variant={variant}></div>
     )
 }

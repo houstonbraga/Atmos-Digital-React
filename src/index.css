@@ -22,6 +22,24 @@
   src: url("./assets/fonts/Graphik-Light-Trial.otf");
 }
 
+/*fonts-class*/
+
+.font-gurajada {
+  font-family: "Gurajada", sans-serif;
+}
+
+.font-graphik { 
+  font-family: "Graphik", sans-serif;
+}
+
+.font-graphik-light {
+  font-family: "Graphik-light", sans-serif;
+}
+ 
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-color: #1B1B1B;
   color: white;
@@ -42,6 +60,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.shadow-left {
+  width: 950px;
+  height: 950px;
+  z-index: -1;
+  background: radial-gradient(circle, #b8448018 0%, #b8448000 70%);
+  border-radius: 50%;
+  filter: blur(50%);
+  position: absolute;
+  top: -100px;
+  overflow: hidden !important;
 }
 
 
