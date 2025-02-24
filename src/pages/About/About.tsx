@@ -28,6 +28,7 @@ const About = () => {
           <p className="max-w-[900px] text-center">No mundo digital de hoje, ter uma presença forte na internet não é mais uma opção, é uma necessidade. A <span className="text-amber-400">Atmos Digital</span> é uma agência digital especializada em criar soluções inovadoras para empresas que desejam se destacar no ambiente online.</p>
         </div>
       </GridContainer>
+      <ShadowBg variant='shadowM'/>
     </>
   );
 };
