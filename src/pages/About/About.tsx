@@ -1,11 +1,13 @@
 import { GridContainer } from "../../components/GridContainer";
 import { Header } from "../../components/Header/Header";
+import { ShadowBg } from "../../components/ShadowBg";
 
 const About = () => {
   return (
     <>
       <Header />
-      <GridContainer className="border border-amber-400">
+      <ShadowBg variant="shadowG"/>
+      <GridContainer>
         <div className="flex justify-center items-center flex-col">
           <h1 className="font-gurajada text-5xl text-amber-400 mt-16 mb-14">
             Quem somos?
@@ -31,6 +33,7 @@ const About = () => {
           </p>
         </div>
       </GridContainer>
+      <ShadowBg variant="shadowM"/>
     </>
   );
 };

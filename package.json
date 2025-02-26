@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.3",
+    "@radix-ui/react-slot": "^1.1.2",
     "class-variance-authority": "^0.7.1",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.476.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",

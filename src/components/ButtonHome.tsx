@@ -6,7 +6,7 @@ type ButtonProps = {
     title: string;
 }
 
-export function Button({ variant, title } : ButtonProps) {
+export function ButtonHome({ variant, title } : ButtonProps) {
     const buttonClass = classNames(
         "px-4 py-4 text-white font-semibold rounded-md w-[180px] cursor-pointer",
         {
