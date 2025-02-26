@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { ButtonHome } from "../../components/ButtonHome";
 import { Header } from "../../components/Header/Header";
 import { ShadowBg } from "../../components/ShadowBg";
@@ -24,7 +25,7 @@ export function Home() {
         </div>
       </div>
       
-
+      <Button>clique aqui!</Button>
       <Carrousel />
     </div>
   );
