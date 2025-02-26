@@ -25,7 +25,6 @@ export function Home() {
         </div>
       </div>
       
-      <Button>clique aqui!</Button>
       <Carrousel />
     </div>
   );

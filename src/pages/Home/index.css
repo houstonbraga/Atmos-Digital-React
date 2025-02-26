@@ -6,7 +6,7 @@
 }
 
 .title-home span {
-  color: rgb(184, 68, 128);
+  color: hsl(var(--secondary));
 }
 
 .text-home {
