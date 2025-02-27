@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ButtonHome } from "../../components/ButtonHome";
 import { Header } from "../../components/Header/Header";
 import { ShadowBg } from "../../components/ShadowBg";
@@ -24,7 +23,7 @@ export function Home() {
           <ButtonHome variant="primary" title="Portifólio" />
         </div>
       </div>
-      
+
       <Carrousel />
     </div>
   );
