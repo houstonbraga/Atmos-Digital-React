@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer";
-import { ButtonHome } from "../../components/ButtonHome";
+import { ButtonHome } from "./components/ButtonHome";
 import { Header } from "../../components/Header/Header";
 import { ShadowBg } from "../../components/ShadowBg";
 import { Carrousel } from "./components/Carrousel";
