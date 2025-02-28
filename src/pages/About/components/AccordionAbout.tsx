@@ -3,31 +3,44 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
- 
+} from "@/components/ui/accordion";
+
 export function AccordionAbout() {
   return (
     <Accordion type="single" collapsible className="w-full max-w-5xl">
       <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionTrigger className="text-start">Desenvolvimento Web de Alto Nível</AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+          Construímos sites, plataformas e sistemas personalizados com
+          tecnologia de ponta. Nossa equipe de desenvolvedores cria experiências
+          interativas, responsivas e otimizadas para garantir a melhor
+          performance e usabilidade. Do site institucional ao e-commerce
+          robusto, entregamos soluções sob medida para cada necessidade.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionTrigger className="text-start">
+          Marketing Digital para Impulsionar Resultados
+        </AccordionTrigger>
         <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
+          Uma presença digital de sucesso vai além de um bom site. Criamos
+          estratégias completas de marketing digital, incluindo gestão de
+          tráfego pago, SEO, redes sociais e e-mail marketing. Nossa missão é
+          conectar marcas ao seu público-alvo e aumentar conversões de forma
+          eficiente.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionTrigger className="text-start">
+          Design Digital que Cativa e Converte
+        </AccordionTrigger>
         <AccordionContent>
-          Yes. It&apos;s animated by default, but you can disable it if you
-          prefer.
+          O design é a primeira impressão que seu público terá da sua marca.
+          Desenvolvemos identidades visuais, interfaces intuitivas e materiais
+          gráficos que fortalecem a presença digital do seu negócio. Do branding
+          ao UX/UI, garantimos designs que combinam estética e funcionalidade.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  )
+  );
 }
