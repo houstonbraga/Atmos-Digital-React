@@ -2,14 +2,15 @@ import { Footer } from "@/components/Footer";
 import { GridContainer } from "../../components/GridContainer";
 import { Header } from "../../components/Header/Header";
 import { ShadowBg } from "../../components/ShadowBg";
+import { AccordionAbout } from "./components/AccordionAbout";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center relative">
       <Header />
       <ShadowBg variant="shadowG" />
       <GridContainer>
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col mb-36">
           <h1 className="font-gurajada text-5xl text-amber-400 mt-16 mb-14">
             Quem somos?
           </h1>
@@ -33,6 +34,14 @@ const About = () => {
             digital especializada em criar soluções inovadoras para empresas que
             desejam se destacar no ambiente online.
           </p>
+        </div>
+
+        <div className="w-full flex flex-col items-center mt-20 mb-20 gap-10">
+          <h1 className="font-gurajada text-5xl">
+            Transformando ideia em{" "}
+            <span className="text-secondary">Experiências Digitais</span>
+          </h1>
+          <AccordionAbout />
         </div>
       </GridContainer>
       <ShadowBg variant="shadowM" />
