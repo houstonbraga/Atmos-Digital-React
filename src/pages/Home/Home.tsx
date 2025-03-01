@@ -15,7 +15,7 @@ export function Home() {
       />
 
       <Header />
-      <ShadowBg variant="shadowP"/>
+      <ShadowBg variant="shadowCenter"/>
 
       <div className="flex flex-col items-center justify-center flex-1 gap-8">
         <HomeInfo />

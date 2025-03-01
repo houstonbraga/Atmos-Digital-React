@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center relative">
       <Header />
-      <ShadowBg variant="shadowG" />
+      <ShadowBg variant="shadowLeft" />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
         <div className="flex justify-center items-center flex-col mb-36">
           <h1 className="font-gurajada text-5xl text-amber-400 mt-16 mb-14">
@@ -75,7 +75,9 @@ const About = () => {
         </div>
       </GridContainer>
       <Footer />
-      <ShadowBg variant="shadowM" />
+      <ShadowBg variant="shadowRight"/>
+      <ShadowBg variant='shadowCenter'/>
+      <ShadowBg variant='shadowLeft' className="!bottom-0 !top-auto"/>
     </div>
   );
 };

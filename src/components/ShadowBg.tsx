@@ -1,16 +1,18 @@
 import classNames from "classnames"
 
 type ShadowBgProps = {
-    variant: "shadowG" | "shadowP" | "shadowM"
+    variant: "shadowCenter" | "shadowRight" | "shadowLeft";
+    className?: string;
 }
 
-export function ShadowBg({ variant }: ShadowBgProps) {
+export function ShadowBg({ variant, className }: ShadowBgProps) {
     const shadowClass = classNames(
         {
-            "shadow-bg": variant === "shadowP",
-            "shadow-right": variant === "shadowM",
-            "shadow-left": variant === "shadowG",
+            "shadow-bg": variant === "shadowCenter",
+            "shadow-right": variant === "shadowRight",
+            "shadow-left": variant === "shadowLeft",
         },
+        className,
     );
 
     return (
