@@ -121,8 +121,14 @@ body {
 
 /*header*/
 
-.header {
-  background-color: hsl(var(--background));
+/*
+  .header {
+  background: linear-gradient(to bottom, #1b1b1b, #1b1b1bd0 );
+}
+*/
+
+.color-header {
+  background-color: #1b1b1b;
 }
 
 /*Buttons*/
