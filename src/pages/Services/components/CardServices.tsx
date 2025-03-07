@@ -47,7 +47,7 @@ export default function CardServices() {
 
           <p className="text-sm text-center">{item.description}</p>
 
-          <button className="px-6 py-2 text-white font-semibold rounded-md cursor-pointer border border-amber-400 hover:bg-amber-400 transition-colors">
+          <button className="px-6 py-2 text-white font-semibold rounded-md cursor-pointer border border-amber-400 hover:border-secondary hover:text-secondary transition-colors">
             Conhecer
           </button>
         </div>
