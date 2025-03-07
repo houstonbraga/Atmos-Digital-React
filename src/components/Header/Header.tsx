@@ -47,7 +47,7 @@ export function Header() {
 
   return (
     <header
-      className={`header sticky py-3 top-0 w-full transition-all duration-300 ${
+      className={`header sticky py-3 top-0 w-full transition-all duration-200 ${
         scrolled ? "color-header shadow-lg" : "bg-transparent"
       }`}
     >
