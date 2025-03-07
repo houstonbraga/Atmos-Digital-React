@@ -1,3 +1,7 @@
+.card-service {
+  background-color: #1b1b1b;
+}
+
 .card-service::before {
   content: "";
   position: absolute;
