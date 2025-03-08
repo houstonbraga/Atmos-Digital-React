@@ -35,7 +35,7 @@ export default function CardServices() {
       {CardsList.map((item) => (
         <div
           key={item.id}
-          className="card-service relative w-[336px] h-[404px] p-5 rounded-lg flex flex-col justify-center items-center gap-4 z-[1] bg-background"
+          className="card-service relative w-[336px] h-[404px] p-5 rounded-lg flex flex-col justify-center items-center gap-4 z-[1] bg-zinc-900 bg-opacity-60"
         >
           <div className="flex flex-col justify-center items-center">
             <img src={item.url} alt={item.title} />
@@ -47,7 +47,7 @@ export default function CardServices() {
 
           <p className="text-sm text-center">{item.description}</p>
 
-          <button className="px-6 py-2 text-white font-semibold rounded-md cursor-pointer border border-amber-400 hover:border-secondary hover:text-secondary transition-colors">
+          <button className="px-6 py-2 text-white rounded-md cursor-pointer border border-amber-400 hover:border-secondary hover:text-secondary transition-colors opacity-80">
             Conhecer
           </button>
         </div>
