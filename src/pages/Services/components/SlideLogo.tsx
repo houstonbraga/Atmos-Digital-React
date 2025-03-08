@@ -13,9 +13,8 @@ export function SlideLogo() {
       <img src="./mark-services-logo.svg" />
       <img src="./mark-services-logo.svg" />
       <img src="./mark-services-logo.svg" />
-      <img src="./mark-services-logo.svg" />
-      <img src="./mark-services-logo.svg" />
-      <img src="./mark-services-logo.svg" />
     </div>
   )
 }
+
+//P REFATORAR⬅️
