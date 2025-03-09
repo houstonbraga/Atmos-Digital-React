@@ -6,6 +6,8 @@ import { MoveDown } from "lucide-react";
 import { SlideLogo } from "./components/SlideLogo";
 import { ShadowBg } from "@/components/ShadowBg";
 import { QualityService } from "./components/QualityService";
+import { HowItWorks } from "./components/HowItsWork";
+import { Carrousel } from "../Home/components/Carrousel";
 
 export default function Services() {
   return (
@@ -39,7 +41,11 @@ export default function Services() {
             <QualityService />
           </div>
         </div>
+        <div className="relative flex flex-col items-center justify-center">
+          <HowItWorks />
+        </div>
       </GridContainer>
+      <Carrousel />
       <ShadowBg variant="shadowLeft" className="z-[-1] -bottom-8" />
     </div>
   );
