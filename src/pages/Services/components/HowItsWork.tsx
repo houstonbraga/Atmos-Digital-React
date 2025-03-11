@@ -15,20 +15,20 @@ const listSteps: HowItsWorkProps[] = [
   {
     id: 2,
     src: "./know-service.svg",
-    title: "Consultas Gratuitas",
-    text: "Entre em contato com nossa equipe, vocé irá ser atendido da melhor forma possivel",
+    title: "Conheça o produto",
+    text: "Conheça todos os benefícios dos nossos produtos e tenha acesso a toda informação sobre o mesmo",
   },
   {
     id: 3,
     src: "./structure-service.svg",
-    title: "Consultas Gratuitas",
-    text: "Entre em contato com nossa equipe, vocé irá ser atendido da melhor forma possivel",
+    title: "Estrutura e produção",
+    text: "Fique por dentro de toda produção e desenvolvimento do seu produto digital",
   },
   {
     id: 4,
     src: "./objetive-service.svg",
-    title: "Consultas Gratuitas",
-    text: "Entre em contato com nossa equipe, vocé irá ser atendido da melhor forma possivel",
+    title: "Objetivo",
+    text: "Finalmente tenha acesso total ao seu produto digital, elaborado com muito carinho por nossa equipe",
   },
 ];
 
