@@ -8,7 +8,7 @@ interface GroupServiceProps {
 const servicesItems: GroupServiceProps[] = [
   {
     id: 1,
-    name: "Cardápio Digital",
+    name: "Gerenciamento de finanças",
     src: "./Capa-servicos.jpg",
     description:
       "Um sistema de cardápio Online, com autamação com o WhatsApp, trazendo praticidade e economia de tempo ao atender seus clientes, apresentando toda informação de serviços/produtos.",
