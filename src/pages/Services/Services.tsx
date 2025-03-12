@@ -8,6 +8,7 @@ import { ShadowBg } from "@/components/ShadowBg";
 import { QualityService } from "./components/QualityService";
 import { HowItWorks } from "./components/HowItsWork";
 import { Carrousel } from "../Home/components/Carrousel";
+import { ServicesSection } from "./components/ServicesSection";
 
 export default function Services() {
   return (
@@ -30,7 +31,11 @@ export default function Services() {
         <SlideLogo />
         <div className="flex items-start justify-between w-full max-w-[890px] mb-40">
           <div className="relative">
-            <img className="big-image-service" src="./big-image-service.jpg" alt="big-image-service" />
+            <img
+              className="big-image-service"
+              src="./big-image-service.jpg"
+              alt="big-image-service"
+            />
             <img
               className="absolute -right-12 -bottom-12 small-image-service"
               src="./small-image-service.jpg"
@@ -46,6 +51,9 @@ export default function Services() {
         </div>
       </GridContainer>
       <Carrousel />
+      <GridContainer className="mt-40 flex flex-col gap-5 justify-center items-center">
+        <ServicesSection />
+      </GridContainer>
       <ShadowBg variant="shadowLeft" className="z-[-1] -bottom-8" />
     </div>
   );
