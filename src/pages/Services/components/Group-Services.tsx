@@ -35,8 +35,8 @@ export function GroupService() {
               alt={service.name}
             />
           </div>
-          <p className="font-poppins text-md/6">
-            {service.description}
+          <p className="font-poppins text-md7/6">
+             {service.description}
           </p>
         </div>
       ))}
