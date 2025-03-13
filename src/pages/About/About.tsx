@@ -20,7 +20,7 @@ const About = () => {
             Quem somos?
           </h1>
           <div className="flex items-center justify-center mb-32 gap-10">
-            <p className="font-Poppins text-xl max-w-[450px]">
+            <p className="font-poppins text-lg max-w-[450px]">
               A <span className="text-amber-400">Atmos Digital</span> é uma
               agência digital especializada em desenvolvimento web, marketing
               digital e design digital. Criamos soluções inovadoras para
@@ -32,7 +32,7 @@ const About = () => {
 
             <img src="./site-about-hero.svg" alt="site-hero-about" />
           </div>
-          <p className="max-w-[900px] text-center">
+          <p className="font-poppins text-md max-w-[900px] text-center">
             No mundo digital de hoje, ter uma presença forte na internet não é
             mais uma opção, é uma necessidade. A{" "}
             <span className="text-amber-400">Atmos Digital</span> é uma agência
@@ -46,7 +46,7 @@ const About = () => {
             Transformando ideia em{" "}
             <span className="text-secondary">Experiências Digitais</span>
           </h1>
-          <p className="text-center mb-10">
+          <p className=" font-poppins text-md text-center mb-10">
             No mundo digital de hoje, ter uma presença forte na internet não é
             mais uma opção, é uma necessidade. A{" "}
             <span className="text-amber-400">Atmos Digital</span> é uma agência

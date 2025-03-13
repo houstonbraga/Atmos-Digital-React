@@ -10,7 +10,7 @@ export function AccordionAbout() {
     <Accordion type="single" collapsible className="w-full max-w-5xl">
       <AccordionItem value="item-1">
         <AccordionTrigger className="text-start">Desenvolvimento Web de Alto Nível</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-poppins text-md">
           Construímos sites, plataformas e sistemas personalizados com
           tecnologia de ponta. Nossa equipe de desenvolvedores cria experiências
           interativas, responsivas e otimizadas para garantir a melhor
@@ -22,7 +22,7 @@ export function AccordionAbout() {
         <AccordionTrigger className="text-start">
           Marketing Digital para Impulsionar Resultados
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-poppins text-md">
           Uma presença digital de sucesso vai além de um bom site. Criamos
           estratégias completas de marketing digital, incluindo gestão de
           tráfego pago, SEO, redes sociais e e-mail marketing. Nossa missão é
@@ -34,7 +34,7 @@ export function AccordionAbout() {
         <AccordionTrigger className="text-start">
           Design Digital que Cativa e Converte
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="font-poppins text-md">
           O design é a primeira impressão que seu público terá da sua marca.
           Desenvolvemos identidades visuais, interfaces intuitivas e materiais
           gráficos que fortalecem a presença digital do seu negócio. Do branding

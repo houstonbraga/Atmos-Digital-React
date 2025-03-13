@@ -45,7 +45,7 @@ export function HowItWorks() {
         {listSteps.map((step) => (
           <div key={step.id} className="flex flex-col gap-4 items-center justify-center max-w-[250px]">
             <img src={step.src} />
-            <h2 className="font-semibold font-graphik text-xl text-secondary">
+            <h2 className="font-semibold font-poppins text-lg text-secondary">
               {step.title}
             </h2>
             <p className="text-center text-sm tracking-wider">

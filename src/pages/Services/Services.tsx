@@ -9,6 +9,7 @@ import { QualityService } from "./components/QualityService";
 import { HowItWorks } from "./components/HowItsWork";
 import { Carrousel } from "../Home/components/Carrousel";
 import { ServicesSection } from "./components/ServicesSection";
+import { Footer } from "@/components/Footer";
 
 export default function Services() {
   return (
@@ -54,6 +55,7 @@ export default function Services() {
       <GridContainer className="mt-40 flex flex-col gap-5 justify-center items-center">
         <ServicesSection />
       </GridContainer>
+      <Footer />
       <ShadowBg variant="shadowLeft" className="z-[-1] -bottom-8" />
     </div>
   );
