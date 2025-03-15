@@ -2,4 +2,31 @@
   filter: drop-shadow(5px 5px 20px #b8448034);
 }
 
+.fade-mask {
+  mask-image: linear-gradient(
+    to right,
+    rgba(27, 27, 27, 0) 0%,  /* Fundo transparente */
+    rgba(27, 27, 27, 1) 20%, /* Fundo sólido */
+    rgba(27, 27, 27, 1) 80%, /* Fundo sólido */
+    rgba(27, 27, 27, 0) 100% /* Fundo transparente */
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(27, 27, 27, 0) 0%,
+    rgba(27, 27, 27, 1) 20%,
+    rgba(27, 27, 27, 1) 80%,
+    rgba(27, 27, 27, 0) 100%
+  );
+}
+
+.tools-section {
+  right: 0;
+  left: 0;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+
+
+
 

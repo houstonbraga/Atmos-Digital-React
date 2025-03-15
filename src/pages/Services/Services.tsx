@@ -7,9 +7,9 @@ import { SlideLogo } from "./components/SlideLogo";
 import { ShadowBg } from "@/components/ShadowBg";
 import { QualityService } from "./components/QualityService";
 import { HowItWorks } from "./components/HowItsWork";
-import { Carrousel } from "../Home/components/Carrousel";
 import { ServicesSection } from "./components/ServicesSection";
 import { Footer } from "@/components/Footer";
+import { ToolsSlide } from "./components/ToolsSlide";
 
 export default function Services() {
   return (
@@ -51,7 +51,7 @@ export default function Services() {
           <HowItWorks />
         </div>
       </GridContainer>
-      <Carrousel />
+      <ToolsSlide />
       <GridContainer className="mt-40 flex flex-col gap-5 justify-center items-center">
         <ServicesSection />
       </GridContainer>
