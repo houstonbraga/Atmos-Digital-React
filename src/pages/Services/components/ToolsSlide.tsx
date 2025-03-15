@@ -32,7 +32,7 @@ export function ToolsSlide() {
               <img
                 src={tool.src}
                 alt={tool.name}
-                className="w-20 h-20 min-w-[50px] min-h-[50px]"
+                className="w-20 h-20 min-w-[50px] min-h-[50px] opacity-60"
               />
             </div>
           ))}
