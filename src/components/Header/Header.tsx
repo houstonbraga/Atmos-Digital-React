@@ -48,7 +48,7 @@ export function Header() {
   return (
     <header
       className={`z-[1000] header sticky py-3 top-0 w-full transition-all duration-200 ${
-        scrolled ? "color-header shadow-lg" : "bg-transparent"
+        scrolled ? "color-header shadow-lg shadow-secondary-shadow" : "bg-transparent"
       }`}
     >
       <GridContainer className="flex justify-between items-center">
