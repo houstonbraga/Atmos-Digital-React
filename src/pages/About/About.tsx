@@ -8,6 +8,7 @@ import { CardAbout } from "./components/CardAbout";
 import "./index.css";
 import { MoveDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { HandDrawnEllipse } from "@/components/HandDrawnEllipse";
 
 const About = () => {
   return (
@@ -16,9 +17,13 @@ const About = () => {
       <ShadowBg variant="shadowLeft" />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
         <div className="flex justify-center items-center flex-col mb-36">
-          <h1 className="font-gurajada text-5xl text-amber-400 mt-16 mb-14">
-            Quem somos?
-          </h1>
+          <div className="relative inline-block mt-20 mb-20">
+            <h1 className="font-gurajada text-5xl text-amber-400 relative z-10 px-4">
+              Quem somos?
+            </h1>
+            <HandDrawnEllipse />
+          </div>
+
           <div className="flex items-center justify-center mb-32 gap-10">
             <p className="font-poppins text-lg max-w-[450px]">
               A <span className="text-amber-400">Atmos Digital</span> é uma
@@ -70,14 +75,16 @@ const About = () => {
           </p>
           <div className="flex flex-col gap-5 items-center ">
             <MoveDown size={28} strokeWidth={3} className="text-amber-400" />
-            <Button className="hover:border-amber-400 border border-amber-400">Clique para falar conosco!</Button>
+            <Button className="hover:border-amber-400 border border-amber-400">
+              Clique para falar conosco!
+            </Button>
           </div>
         </div>
       </GridContainer>
       <Footer />
-      <ShadowBg variant="shadowRight"/>
-      <ShadowBg variant='shadowCenter'/>
-      <ShadowBg variant='shadowLeft' className="!bottom-0 !top-auto"/>
+      <ShadowBg variant="shadowRight" />
+      <ShadowBg variant="shadowCenter" />
+      <ShadowBg variant="shadowLeft" className="!bottom-0 !top-auto" />
     </div>
   );
 };

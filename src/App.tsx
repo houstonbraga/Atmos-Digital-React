@@ -4,7 +4,10 @@ import "./index.css";
 
 const App = () => {
   return (
+    <>
       <AppRoutes />
+    </>
+      
   );
 };
 
