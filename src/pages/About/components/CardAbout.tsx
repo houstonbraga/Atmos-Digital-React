@@ -21,9 +21,9 @@ export function CardAbout() {
   return (
     <div className="flex flex-col gap-5 justify-center">
       {cardItems.map((item) => (
-        <div className="flex items-center gap-2">
+        <div key={item.id} className="flex items-center gap-2">
           <Check className="text-amber-400"/>
-          <p key={item.id}>{item.description}</p>
+          <p>{item.description}</p>
         </div>
       ))}
     </div>

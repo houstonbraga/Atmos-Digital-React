@@ -16,7 +16,8 @@ export default function Services() {
     <div className="flex flex-col justify-center items-center relative ">
       <Header />
       <ShadowBg variant="shadowCenter" className="z-[-1]" />
-      <ShadowBg variant="shadowRight" className="z-[-1]" />
+      <ShadowBg variant="shadowRight" className="z-[-1] top-0" />
+      <ShadowBg variant="shadowLeft" className="z-[-1] top-96" />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
         <h1 className="text-5xl font-gurajada text-amber-400 mt-16">
           Nossos serviços
@@ -56,7 +57,8 @@ export default function Services() {
         <ServicesSection />
       </GridContainer>
       <Footer />
-      <ShadowBg variant="shadowLeft" className="z-[-1] -bottom-8" />
+      <ShadowBg variant="shadowRight" className="z-[-1] bottom-96" />
+      <ShadowBg variant="shadowLeft" className="z-[-1] bottom-0" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import classNames from "classnames"
+import { twMerge } from "tailwind-merge";
 
 type ShadowBgProps = {
     variant: "shadowCenter" | "shadowRight" | "shadowLeft";
@@ -12,10 +13,9 @@ export function ShadowBg({ variant, className }: ShadowBgProps) {
             "shadow-right": variant === "shadowRight",
             "shadow-left": variant === "shadowLeft",
         },
-        className,
     );
 
     return (
-        <div className={shadowClass} data-variant={variant}></div>
+        <div className={twMerge(shadowClass, className)} data-variant={variant}></div>
     )
 }

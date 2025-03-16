@@ -27,10 +27,10 @@ export function GroupService() {
     <div className="flex space-x-10">
       {servicesItems.map((service) => (
         <div key={service.id} className="flex flex-col max-w-[450px] gap-7">
-          <div className="flex flex-col justify-start gap-2">
-            <h3 className="text-amber-400">{service.name}</h3>
+          <div className="flex flex-col justify-start gap-1">
+            <h3 className="text-sm text-amber-400">{service.name}</h3>
             <img
-              className="w-[450px] rounded-md drop-shadow-md box-shadow"
+              className="w-[450px] rounded-md drop-shadow-md box-shadow cursor-pointer hover:grayscale transition-all duration-1000"
               src={service.src}
               alt={service.name}
             />
