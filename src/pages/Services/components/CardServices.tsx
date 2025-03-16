@@ -23,7 +23,7 @@ const CardsList: CardServicesProps[] = [
   {
     id: 3,
     url: "./icon-marketing-services.svg",
-    title: "Marketing Digital",
+    title: "Sistemas e Saas",
     description:
       "Estratégias de marketing digital eficazes para aumentar a visibilidade e o alcance do seu negócio, garantindo resultados positivos a longo prazo",
   },
