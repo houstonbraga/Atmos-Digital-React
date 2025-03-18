@@ -4,7 +4,7 @@ import { Header } from "../../components/Header/Header";
 import { ShadowBg } from "../../components/ShadowBg";
 import { AccordionAbout } from "./components/AccordionAbout";
 import { CardAbout } from "./components/CardAbout";
-
+import imageAbout from "@/assets/images/logo-about.png";
 import "./index.css";
 import { MoveDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center relative">
       <Header />
-      <ShadowBg variant="shadowLeft" />
+      <ShadowBg variant="shadowLeft" className="top-40"/>
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
         <div className="flex justify-center items-center flex-col mb-36">
           <div className="relative inline-block mt-20 mb-20">
@@ -35,7 +35,7 @@ const About = () => {
               marcas a crescer e se destacar no mercado.
             </p>
 
-            <img src="./site-about-hero.svg" alt="site-hero-about" />
+            <img src={imageAbout} alt="site-hero-about" />
           </div>
           <p className="font-poppins text-md max-w-[900px] text-center">
             No mundo digital de hoje, ter uma presença forte na internet não é
@@ -82,7 +82,7 @@ const About = () => {
         </div>
       </GridContainer>
       <Footer />
-      <ShadowBg variant="shadowRight" />
+      <ShadowBg variant="shadowRight" className="top-0"/>
       <ShadowBg variant="shadowCenter" />
       <ShadowBg variant="shadowLeft" className="!bottom-0 !top-auto" />
     </div>
