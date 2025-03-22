@@ -10,6 +10,7 @@ import { HowItWorks } from "./components/HowItsWork";
 import { ServicesSection } from "./components/ServicesSection";
 import { Footer } from "@/components/Footer";
 import { ToolsSlide } from "./components/ToolsSlide";
+import { HandDrawnLine } from "@/components/HandDrawnLine";
 
 export default function Services() {
   return (
@@ -19,9 +20,12 @@ export default function Services() {
       <ShadowBg variant="shadowRight" className="z-[-1] top-0" />
       <ShadowBg variant="shadowLeft" className="z-[-1] top-96" />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
-        <h1 className="text-5xl font-gurajada text-amber-400 mt-16">
-          Nossos serviços
-        </h1>
+        <div className="relative inline-block mt-20">
+          <h1 className="font-gurajada text-5xl text-amber-400 relative z-10 px-4">
+            Nossos serviços
+          </h1>
+          <HandDrawnLine />
+        </div>
         <MoveDown
           size={28}
           strokeWidth={3}
