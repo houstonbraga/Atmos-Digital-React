@@ -1,3 +1,5 @@
+import { ExternalLink } from "lucide-react";
+
 interface GroupServiceProps {
   id: number;
   name: string;
@@ -29,15 +31,22 @@ export function GroupService() {
         <div key={service.id} className="flex flex-col max-w-[450px] gap-7">
           <div className="flex flex-col justify-start gap-1">
             <h3 className="text-sm text-amber-400">{service.name}</h3>
-            <img
-              className="w-[450px] rounded-md drop-shadow-md box-shadow cursor-pointer hover:grayscale transition-all duration-1000"
-              src={service.src}
-              alt={service.name}
-            />
+            <div className="relative group">
+              <img
+                className="w-[450px] rounded-md drop-shadow-lg box-shadow group-hover:grayscale"
+                src={service.src}
+                alt={service.name}
+              />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/50 rounded-md cursor-pointer ">
+                <div className="flex justify-center items-center">
+                  <a href="#">
+                  <ExternalLink className="text-amber-400 hover:text-white" width={44} height={44}/>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <p className="font-poppins text-md7/6">
-             {service.description}
-          </p>
+          <p className="font-poppins text-md7/6">{service.description}</p>
         </div>
       ))}
     </div>

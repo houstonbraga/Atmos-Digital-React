@@ -7,10 +7,10 @@ import { SlideLogo } from "./components/SlideLogo";
 import { ShadowBg } from "@/components/ShadowBg";
 import { QualityService } from "./components/QualityService";
 import { HowItWorks } from "./components/HowItsWork";
-import { ServicesSection } from "./components/ServicesSection";
 import { Footer } from "@/components/Footer";
 import { ToolsSlide } from "./components/ToolsSlide";
 import { HandDrawnLine } from "@/components/HandDrawnLine";
+import { GroupService } from "./components/Group-Services";
 
 export default function Services() {
   return (
@@ -58,7 +58,12 @@ export default function Services() {
       </GridContainer>
       <ToolsSlide />
       <GridContainer className="mt-40 flex flex-col gap-5 justify-center items-center">
-        <ServicesSection />
+        <div className="flex flex-col justify-center items-center mb-40">
+          <h1 className="font-gurajada text-5xl text-amber-400 mb-20">
+            Nossos sistemas web
+          </h1>
+          <GroupService />
+        </div>
       </GridContainer>
       <Footer />
       <ShadowBg variant="shadowRight" className="z-[-1] bottom-96" />
