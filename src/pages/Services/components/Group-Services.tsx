@@ -20,7 +20,7 @@ const servicesItems: GroupServiceProps[] = [
     name: "Agendamento Online",
     src: "./capa-servicos2.jpg",
     description:
-      "Um sistema de agendamento para seu estabelecimento, economizando tempo ao responder muitos clientes, além de dexar seu agendamento de clientes 100% organizado com horários e dias dos atendimentos.",
+      "Um sistema de agendamento para seu estabelecimento, economizando tempo ao responder muitos clientes, além de deixar seu agendamento de clientes 100% organizado com horários e dias dos atendimentos.",
   },
 ];
 
