@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
 import rough from "roughjs/bin/rough";
 
-export function HandDrawnLine() {
+export function HandDrawnWave() {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     const rc = rough.svg(svgRef.current!);
     svgRef.current!.innerHTML = '';
 
-    const amplitude = 5; // Altura das cristas (mais suave)
-    const wavelength = 40; // Ondas mais largas
+    const amplitude = 3; // Altura das cristas (mais suave)
+    const wavelength = 50; // Ondas mais largas
     const width = 250;
     const yBase = 50;
 
@@ -25,8 +25,8 @@ export function HandDrawnLine() {
       const [x2, y2] = points[i + 1];
       const line = rc.line(x1, y1, x2, y2, {
         stroke: '#B6437F',
-        strokeWidth: 1.2,
-        roughness: 1, // Suaviza o traço "feito à mão"
+        strokeWidth: 1.5,
+        roughness: 2, // Suaviza o traço "feito à mão"
         bowing: 0.5,  // Menos curvado
       });
       svgRef.current!.appendChild(line);
