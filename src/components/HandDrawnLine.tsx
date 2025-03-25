@@ -10,7 +10,7 @@ export function HandDrawnLine() {
 
     // line(x1, y1, x2, y2)
     
-    const line = rc.line(0, 50, 250, 60, {
+    const line = rc.line(0, 50, 250, 50, {
       stroke: '#B6437F',
       strokeWidth: 1.5,
       roughness: 3.2,
