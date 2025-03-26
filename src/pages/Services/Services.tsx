@@ -12,6 +12,7 @@ import { ToolsSlide } from "./components/ToolsSlide";
 import { HandDrawnLine } from "@/components/HandDrawnLine";
 import { GroupService } from "./components/Group-Services";
 
+
 export default function Services() {
   return (
     <div className="flex flex-col justify-center items-center relative ">
@@ -24,7 +25,7 @@ export default function Services() {
           <h1 className="font-gurajada text-5xl text-amber-400 relative z-10 px-4">
             Nossos serviços
           </h1>
-          <HandDrawnLine />
+          <HandDrawnLine width={250} height={100} strokeColor="#b84480"/>
         </div>
         <MoveDown
           size={28}
@@ -59,9 +60,12 @@ export default function Services() {
       <ToolsSlide />
       <GridContainer className="mt-40 flex flex-col gap-5 justify-center items-center">
         <div className="flex flex-col justify-center items-center mb-40">
-          <h1 className="font-gurajada text-5xl text-amber-400 mb-20">
-            Nossos sistemas web
-          </h1>
+          <div className="relative inline-block mb-40">
+            <h1 className="font-gurajada text-5xl text-amber-400 relative z-10 px-4">
+              Nossos SaaS em serviços
+            </h1>
+            <HandDrawnLine width={400} height={100} strokeColor="#b84480"/>
+          </div>
           <GroupService />
         </div>
       </GridContainer>

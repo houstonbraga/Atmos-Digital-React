@@ -20,14 +20,10 @@ export function AccordionAbout() {
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger className="text-start">
-          Marketing Digital para Impulsionar Resultados
+        Criação de SaaS com tecnologia de ponta
         </AccordionTrigger>
         <AccordionContent className="font-poppins text-md">
-          Uma presença digital de sucesso vai além de um bom site. Criamos
-          estratégias completas de marketing digital, incluindo gestão de
-          tráfego pago, SEO, redes sociais e e-mail marketing. Nossa missão é
-          conectar marcas ao seu público-alvo e aumentar conversões de forma
-          eficiente.
+          Desenvolvemos softwares como serviço (SaaS) escaláveis e seguros, permitindo que sua empresa ofereça soluções inovadoras na nuvem. Da concepção à implementação, garantimos tecnologia de ponta e experiência otimizada para os usuários.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">

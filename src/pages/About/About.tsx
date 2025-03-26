@@ -25,10 +25,10 @@ const About = () => {
           </div>
 
           <div className="flex items-center justify-center mb-32 gap-10">
-            <p className="font-poppins text-lg max-w-[450px]">
+            <p className="font-poppins text-lg max-w-[550px]">
               A <span className="text-amber-400">Atmos Digital</span> é uma
-              agência digital especializada em desenvolvimento web, marketing
-              digital e design digital. Criamos soluções inovadoras para
+              agência digital especializada em desenvolvimento web, design digital e vendas de sistemas web (SaaS)
+              digital. Criamos soluções inovadoras para
               empresas que desejam fortalecer sua presença online, combinando
               tecnologia, estratégia e criatividade. Nosso objetivo é
               transformar ideias em experiências digitais impactantes, ajudando
@@ -48,15 +48,11 @@ const About = () => {
 
         <div className="w-full flex flex-col items-center mt-20 mb-20 gap-10">
           <h1 className="font-gurajada text-5xl mb-10">
-            Transformando ideia em{" "}
+            Transformando ideias em{" "}
             <span className="text-secondary">Experiências Digitais</span>
           </h1>
           <p className=" font-poppins text-md text-center mb-10">
-            No mundo digital de hoje, ter uma presença forte na internet não é
-            mais uma opção, é uma necessidade. A{" "}
-            <span className="text-amber-400">Atmos Digital</span> é uma agência
-            digital especializada em criar soluções inovadoras para empresas que
-            desejam se destacar no ambiente online.
+          No mercado digital de hoje, ter uma presença online forte não é apenas uma vantagem, mas uma necessidade. A <span className="text-amber-400">Atmos Digital</span> é especialista no desenvolvimento de soluções SaaS, criação de sistemas web sob medida e templates de sites otimizados, ajudando empresas a crescer e se destacar no ambiente online.
           </p>
           <AccordionAbout />
         </div>

@@ -25,7 +25,7 @@ const CardsList: CardServicesProps[] = [
     url: "./icon-marketing-services.svg",
     title: "Sistemas e Saas",
     description:
-      "Estratégias de marketing digital eficazes para aumentar a visibilidade e o alcance do seu negócio, garantindo resultados positivos a longo prazo",
+      "Desenvolvimento de SaaS e Web Systems com tecnologia de ponta, garantindo o melhor desempenho e segurança para o seu negócio digital",
   },
 ];
 
