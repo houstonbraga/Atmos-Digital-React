@@ -14,9 +14,9 @@ export function LinkItem({ path, title }: LinkItemProps) {
   const isActive = currentPath === normalizedPath; 
 
   const linkClasses = classNames(
-    "transition-colors text-white hover:text-amber-400 font-poppins",
+    "transition-colors text-white hover:text-amber-400 font-graphik",
     {
-      "!text-amber-400 selected-link border-b border-amber-400": isActive, 
+      "!text-amber-400 selected-link": isActive, 
     }
   );
 
