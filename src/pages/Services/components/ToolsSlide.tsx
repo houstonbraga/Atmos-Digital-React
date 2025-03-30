@@ -8,6 +8,7 @@ import photoshop from "@/assets/icons-skills/photoshop.png";
 import react from "@/assets/icons-skills/react.png";
 import typescript from "@/assets/icons-skills/typescript.png";
 import tailwind from "@/assets/icons-skills/tailwind.svg";
+import nextjs from "@/assets/icons-skills/nextjs.svg";
 
 export function ToolsSlide() {
   const tools = [
@@ -21,6 +22,7 @@ export function ToolsSlide() {
     { src: react, name: "React" },
     { src: typescript, name: "TypeScript" },
     { src: tailwind, name: "Tailwind" },
+    { src: nextjs, name: "Next.js" },
   ];
 
   return (
