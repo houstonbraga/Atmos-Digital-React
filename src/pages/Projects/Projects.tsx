@@ -1,13 +1,8 @@
 import { GridContainer } from "@/components/GridContainer";
 import { Header } from "../../components/Header/Header";
 import { HandDrawnWave } from "@/components/HandDrawnWave";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import CarouselWebSites from "./components/Carousel";
+
 
 
 const Projects = () => {
@@ -22,16 +17,8 @@ const Projects = () => {
           </h1>
           <HandDrawnWave />
         </div>
-
-        <Carousel>
-  <CarouselContent>
-    <CarouselItem>...</CarouselItem>
-    <CarouselItem>...</CarouselItem>
-    <CarouselItem>...</CarouselItem>
-  </CarouselContent>
-  <CarouselPrevious />
-  <CarouselNext />
-</Carousel>
+        <CarouselWebSites />
+        
       </GridContainer>
     </div>
   );
