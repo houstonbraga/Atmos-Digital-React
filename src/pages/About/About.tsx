@@ -21,7 +21,7 @@ const About = () => {
             <h1 className="font-gurajada text-5xl text-amber-400 relative z-10 px-4">
               Quem somos?
             </h1>
-            <HandDrawnEllipse />
+            <HandDrawnEllipse className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0"/>
           </div>
 
           <div className="flex items-center justify-center mb-32 gap-10">

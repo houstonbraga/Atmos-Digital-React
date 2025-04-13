@@ -1,7 +1,13 @@
 import { useEffect, useRef } from "react";
 import rough from "roughjs/bin/rough";
 
-export function HandDrawnEllipse() {
+interface HandDrawnEllipseProps {
+  className?: string
+  width?: number
+  height?: number
+}
+
+export function HandDrawnEllipse({ className, width, height }: HandDrawnEllipseProps) {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
@@ -23,9 +29,9 @@ export function HandDrawnEllipse() {
   return (
     <svg
       ref={svgRef}
-      width="300"
-      height="100"
-      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+      width={width}
+      height={height}
+      className={className}
     ></svg>
   );
 }

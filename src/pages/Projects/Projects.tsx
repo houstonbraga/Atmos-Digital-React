@@ -15,8 +15,8 @@ const Projects = () => {
           </h1>
           <HandDrawnWave />
         </div>
+        <CarouselWebSites />
       </GridContainer>
-      <CarouselWebSites />
     </div>
   );
 };
