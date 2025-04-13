@@ -8,24 +8,24 @@ import {
 
 export default function CarouselWebSites() {
     return (
-        <Carousel className="top-20">
+        <Carousel className="top-40 ml-5">/
           <CarouselContent>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-1/5">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-1/5">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-1/5">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-1/5">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-1/5">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-1/5">
               <img src="/project.png" alt="project" />
             </CarouselItem>
           </CarouselContent>
