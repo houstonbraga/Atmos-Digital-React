@@ -2,6 +2,7 @@ import { GridContainer } from "@/components/GridContainer";
 import { Header } from "../../components/Header/Header";
 import { HandDrawnWave } from "@/components/HandDrawnWave";
 import CarouselWebSites from "./components/CarouselWebSites";
+import CarouselDesignDigital from "./components/CarouselDesignDigital";
 
 const Projects = () => {
   
@@ -16,6 +17,7 @@ const Projects = () => {
           <HandDrawnWave />
         </div>
         <CarouselWebSites />
+        <CarouselDesignDigital />
       </GridContainer>
     </div>
   );

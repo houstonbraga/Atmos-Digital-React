@@ -1,25 +1,18 @@
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { HandDrawnEllipse } from "@/components/HandDrawnEllipse";
 
-import { HandDrawnEllipse } from "@/components/HandDrawnEllipse"
-
-export default function CarouselWebSites() {
+export default function CarouselDesignDigital() {
     return (
-      <div className="flex flex-col justify-start mt-20">
+        <div className="flex flex-col justify-start mt-5">
         <div className="relative inline-block mb-3">
-          <h3 className="font-gurajada text-3xl text-amber-400 relative z-10">Web Sites</h3>
+          <h3 className="font-gurajada text-3xl text-amber-400 relative z-10">Design</h3>
           <HandDrawnEllipse 
             ellipseX={80}
             ellipseY={50}
-            ellipseWidth={150}
+            ellipseWidth={100}
             ellipseHeight={40}
             ellipseColor='#faa819'
-            className="absolute -top-8 -left-8 z-0"
+            className="absolute -top-8 -left-12 z-0"
           />
         </div>
         
@@ -52,6 +45,5 @@ export default function CarouselWebSites() {
           <CarouselNext />
         </Carousel>
       </div>
-        
     )
 }

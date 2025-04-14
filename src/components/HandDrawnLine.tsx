@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 import rough from "roughjs/bin/rough";
 
 interface HandDrawnLineProps {
-  width: number
-  height: number
-  strokeColor: string
+  width?: number
+  height?: number
+  strokeColor?: string
 }
 
 export function HandDrawnLine({width, height, strokeColor}: HandDrawnLineProps) {
