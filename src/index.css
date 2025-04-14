@@ -46,6 +46,11 @@
   src: url("./assets/fonts/Graphik-Light-Trial.otf");
 }
 
+@font-face {
+  font-family: "Porao";
+  src: url("./assets/fonts/Porao-Inline.otf");
+}
+
 /*fonts-class*/
 
 .font-gurajada {
@@ -62,6 +67,10 @@
 
 .font-poppins {
   font-family: "Poppins", sans-serif;
+}
+
+.font-porao {
+  font-family: "Porao", sans-serif;
 }
 
 html, body, #root {
