@@ -26,25 +26,24 @@ export default function CarouselWebSites() {
         <Carousel className="mt-2" 
         opts={{
           align: "start",
-          loop: true,
         }}>
           <CarouselContent>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
               <img src="/project.png" alt="project" />
             </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
               <img src="/project.png" alt="project" />
             </CarouselItem>
           </CarouselContent>
