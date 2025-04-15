@@ -3,6 +3,8 @@ import { Header } from "../../components/Header/Header";
 import { HandDrawnWave } from "@/components/HandDrawnWave";
 import CarouselWebSites from "./components/CarouselWebSites";
 import CarouselDesignDigital from "./components/CarouselDesignDigital";
+import { NameSlide } from "./components/NameSlide";
+import './index.css'
 
 const Projects = () => {
   
@@ -19,6 +21,7 @@ const Projects = () => {
         <CarouselWebSites />
         <CarouselDesignDigital />
       </GridContainer>
+      <NameSlide />
     </div>
   );
 };
