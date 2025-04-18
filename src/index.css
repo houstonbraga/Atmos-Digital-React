@@ -51,6 +51,10 @@
   src: url("./assets/fonts/Porao-Inline.otf");
 }
 
+@font-face {
+  font-family: "Porao-serif";
+  src: url("./assets/fonts/Porao-Serif.otf");
+}
 /*fonts-class*/
 
 .font-gurajada {
@@ -71,6 +75,10 @@
 
 .font-porao {
   font-family: "Porao", sans-serif;
+}
+
+.font-porao-serif {
+  font-family: "Porao-serif", sans-serif;
 }
 
 html, body, #root {

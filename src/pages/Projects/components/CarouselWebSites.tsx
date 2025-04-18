@@ -3,6 +3,7 @@ import {
     CarouselContent,
     CarouselItem,
     CarouselNext,
+    CarouselPrevious,
   } from "@/components/ui/carousel"
 
 import { HandDrawnEllipse } from "@/components/HandDrawnEllipse"
@@ -47,6 +48,7 @@ export default function CarouselWebSites() {
               <img src="/project.png" alt="project" />
             </CarouselItem>
           </CarouselContent>
+          <CarouselPrevious />
           <CarouselNext />
         </Carousel>
       </div>
