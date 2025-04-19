@@ -78,12 +78,23 @@ export default {
           from: { transform: "translateX(0%)" },
           to: { transform: "translateX(-50%)" },
         },
+
+		slideLeft: {
+			'0%, 100%': { transform: 'translateX(0)' },
+			'50%': { transform: 'translateX(-6px)' },
+		  },
+		  slideRight: {
+			'0%, 100%': { transform: 'translateX(0)' },
+			'50%': { transform: 'translateX(6px)' },
+		  },
 				
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-				marquee: "marquee 20s linear infinite",
+			marquee: "marquee 20s linear infinite",
+			'slide-left': 'slideLeft 1.5s ease-in-out infinite',
+        	'slide-right': 'slideRight 1.5s ease-in-out infinite',
   		}
   	}
   },
