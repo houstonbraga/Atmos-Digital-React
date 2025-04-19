@@ -5,6 +5,7 @@ import CarouselWebSites from "./components/CarouselWebSites";
 import CarouselDesignDigital from "./components/CarouselDesignDigital";
 import { NameSlide } from "./components/NameSlide";
 import './index.css'
+import SeparatorProjects from "./components/SeparatorProjects";
 
 const Projects = () => {
   
@@ -19,6 +20,7 @@ const Projects = () => {
           <HandDrawnWave />
         </div>
         <CarouselWebSites />
+        <SeparatorProjects />
         <CarouselDesignDigital />
       </GridContainer>
       <NameSlide />
