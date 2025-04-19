@@ -23,9 +23,9 @@ export default function CarouselWebSites() {
           />
         </div>
         
-        <Carousel className="mt-2" 
+        <Carousel className="mt-2 w-full" 
         opts={{
-          align: "start",
+          align: "center",
           loop: true,
         }}>
           <CarouselContent>
