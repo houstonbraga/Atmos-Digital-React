@@ -8,6 +8,16 @@ import {
 
 import { HandDrawnEllipse } from "@/components/HandDrawnEllipse"
 
+interface Projects {
+  id: number
+  url: string
+}
+
+const projects: Projects[] = [
+  {id: 1, url: "/project.jpg"},
+  {id: 2, url: "big-image-service.jpg"}
+]
+
 export default function CarouselWebSites() {
     return (
       <div className="flex flex-col justify-start mt-20">
@@ -23,30 +33,26 @@ export default function CarouselWebSites() {
           />
         </div>
         
-        <Carousel className="mt-2 w-full" 
+        <Carousel className="mt-2" 
         opts={{
           align: "center",
           loop: true,
         }}>
           <CarouselContent>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-              <img src="/project.png" alt="project" />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-              <img src="/project.png" alt="project" />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-              <img src="/project.png" alt="project" />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-              <img src="/project.png" alt="project" />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-              <img src="/project.png" alt="project" />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-              <img src="/project.png" alt="project" />
-            </CarouselItem>
+            {
+              [...projects, ...projects, ...projects].map((project) => (
+                <CarouselItem
+                 key={project.id} 
+                 className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4 max-w-[350px] max-h-[180px]"
+                >
+                  <img
+                   src={project.url}
+                   alt="project"
+                  />
+                </CarouselItem>
+              ))
+            }
+            
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />

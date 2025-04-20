@@ -3,7 +3,7 @@ import { HandDrawnEllipse } from "@/components/HandDrawnEllipse";
 
 export default function CarouselDesignDigital() {
     return (
-        <div className="flex flex-col justify-start mt-5">
+        <div className="flex flex-col justify-start">
         <div className="relative inline-block mb-3">
           <h3 className="font-gurajada text-3xl text-amber-400 relative z-10">Design</h3>
           <HandDrawnEllipse 
