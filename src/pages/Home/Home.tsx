@@ -5,15 +5,11 @@ import { ShadowBg } from "../../components/ShadowBg";
 import { Carrousel } from "./components/Carrousel";
 import { HomeInfo } from "./components/HomeInfo";
 import './index.css'
+import BackgroundHome from "./components/BackgroundHome";
 export function Home() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen">
-      <img
-        src="./background.svg"
-        alt="background-img"
-        className="fixed z-[-1] w-full h-full opacity-50"
-      />
-
+      <BackgroundHome />
       <Header />
       <ShadowBg variant="shadowCenter"/>
 
