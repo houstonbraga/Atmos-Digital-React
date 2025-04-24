@@ -9,6 +9,7 @@ import react from "@/assets/icons-skills/react.png";
 import typescript from "@/assets/icons-skills/typescript.png";
 import tailwind from "@/assets/icons-skills/tailwind.svg";
 import nextjs from "@/assets/icons-skills/nextjs.svg";
+import postgresql from "@/assets/icons-skills/icons8-postgreesql.svg";
 
 export function ToolsSlide() {
   const tools = [
@@ -23,6 +24,7 @@ export function ToolsSlide() {
     { src: typescript, name: "TypeScript" },
     { src: tailwind, name: "Tailwind" },
     { src: nextjs, name: "Next.js" },
+    { src: postgresql, name: 'Postgresql' }
   ];
 
   return (
