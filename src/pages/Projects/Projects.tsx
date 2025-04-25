@@ -1,11 +1,11 @@
 import { GridContainer } from "@/components/GridContainer";
 import { Header } from "../../components/Header/Header";
-import { HandDrawnWave } from "@/components/HandDrawnWave";
 import CarouselWebSites from "./components/CarouselWebSites";
 import CarouselDesignDigital from "./components/CarouselDesignDigital";
 import { NameSlide } from "./components/NameSlide";
 import './index.css'
 import SeparatorProjects from "./components/SeparatorProjects";
+import TitleProjects from "./components/TitleProjects";
 
 const Projects = () => {
   
@@ -13,12 +13,7 @@ const Projects = () => {
     <div className="flex flex-col justify-center items-center relative">
       <Header />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
-        <div className="relative inline-block mt-20">
-          <h1 className="font-gurajada text-5xl text-amber-400 relative z-10 px-4">
-            Nossos projetos
-          </h1>
-          <HandDrawnWave />
-        </div>
+        <TitleProjects />
         <CarouselWebSites />
         <SeparatorProjects />
         <CarouselDesignDigital />

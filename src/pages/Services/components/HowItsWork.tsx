@@ -34,25 +34,30 @@ const listSteps: HowItsWorkProps[] = [
 
 export function HowItWorks() {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h2 className="font-gurajada text-5xl text-amber-400 mb-20">Como Funciona?</h2>
-      <h1 className="text-center font-bold text-4xl font-graphik max-w-[700px] mb-20">
-        Obtenha resultados surpreendentes com apenas{" "}
-        <span className="text-secondary">4 etapas simples</span>
-      </h1>
+    <div className="relative flex flex-col items-center justify-center">
+      <div className="flex flex-col justify-center items-center">
+        <h2 className="font-gurajada text-5xl text-amber-400 mb-20">
+          Como Funciona?
+        </h2>
+        <h1 className="text-center font-bold text-4xl font-graphik max-w-[700px] mb-20">
+          Obtenha resultados surpreendentes com apenas{" "}
+          <span className="text-secondary">4 etapas simples</span>
+        </h1>
 
-      <div className="flex gap-4 items-center justify-between mb-40">
-        {listSteps.map((step) => (
-          <div key={step.id} className="flex flex-col gap-4 items-center justify-center max-w-[250px]">
-            <img src={step.src} />
-            <h2 className="font-semibold font-poppins text-lg text-secondary">
-              {step.title}
-            </h2>
-            <p className="text-center text-sm tracking-wider">
-              {step.text}
-            </p>
-          </div>
-        ))}
+        <div className="flex gap-4 items-center justify-between mb-40">
+          {listSteps.map((step) => (
+            <div
+              key={step.id}
+              className="flex flex-col gap-4 items-center justify-center max-w-[250px]"
+            >
+              <img src={step.src} />
+              <h2 className="font-semibold font-poppins text-lg text-secondary">
+                {step.title}
+              </h2>
+              <p className="text-center text-sm tracking-wider">{step.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
