@@ -13,12 +13,15 @@ const Projects = () => {
     <div className="flex flex-col justify-center items-center relative">
       <Header />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
-        <TitleProjects />
+        <TitleProjects title="Nossos cases"/>
         <CarouselWebSites />
         <SeparatorProjects />
         <CarouselDesignDigital />
       </GridContainer>
       <NameSlide />
+      <GridContainer className="flex flex-col gap-5 justify-center items-center">
+        <TitleProjects title="Feedbacks de clientes"/>
+      </GridContainer>
     </div>
   );
 };
