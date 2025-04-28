@@ -7,6 +7,7 @@ import './index.css'
 import SeparatorProjects from "./components/SeparatorProjects";
 import TitleProjects from "./components/TitleProjects";
 import TitleFeed from "./components/TitleFeed";
+import GroupTestimonials from "./components/GroupTestimonials";
 
 const Projects = () => {
   
@@ -22,6 +23,7 @@ const Projects = () => {
       <NameSlide />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
         <TitleFeed />
+        <GroupTestimonials />
       </GridContainer>
     </div>
   );
