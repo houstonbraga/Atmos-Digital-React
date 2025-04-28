@@ -6,6 +6,7 @@ import { NameSlide } from "./components/NameSlide";
 import './index.css'
 import SeparatorProjects from "./components/SeparatorProjects";
 import TitleProjects from "./components/TitleProjects";
+import TitleFeed from "./components/TitleFeed";
 
 const Projects = () => {
   
@@ -20,7 +21,7 @@ const Projects = () => {
       </GridContainer>
       <NameSlide />
       <GridContainer className="flex flex-col gap-5 justify-center items-center">
-        <TitleProjects title="Feedbacks de clientes"/>
+        <TitleFeed />
       </GridContainer>
     </div>
   );
