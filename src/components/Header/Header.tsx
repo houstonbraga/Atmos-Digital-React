@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { GridContainer } from "../GridContainer";
 import { LinkItem } from "./LinkItem";
+import { Link } from "react-router-dom";
 
 const menuItens = [
   {
@@ -41,19 +42,23 @@ export function Header() {
       }
     };
 
-    window.addEventListener('scroll', handlescrool);
+    window.addEventListener("scroll", handlescrool);
     return () => window.removeEventListener("scroll", handlescrool);
   }, []);
 
   return (
     <header
       className={`z-[1000] header sticky py-3 top-0 w-full transition-all duration-200 ${
-        scrolled ? "color-header shadow-lg shadow-secondary-shadow" : "background"
+        scrolled
+          ? "color-header shadow-lg shadow-secondary-shadow"
+          : "background"
       }`}
     >
       <GridContainer className="flex justify-between items-center">
         <div>
-          <img src="/logo.svg" alt="logo-img" width={50} />
+          <Link to="/">
+            <img src="/logo.svg" alt="logo-img" width={50} />
+          </Link>
         </div>
         <nav className="flex items-center gap-6">
           <ul className="flex gap-16">
