@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/carousel";
 
 
-
 export default function GroupTestimonials() {
   const [emblaApi, setEmblaApi] = useState<any>(null); //CONCERTAR ESSE ERRO🥶
   const [currentSlide, setCurrentSlide] = useState(0);

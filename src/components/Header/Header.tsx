@@ -53,7 +53,7 @@ export function Header() {
     >
       <GridContainer className="flex justify-between items-center">
         <div>
-          <img src="/logo.svg" alt="logo-img" width={120} />
+          <img src="/logo.svg" alt="logo-img" width={50} />
         </div>
         <nav className="flex items-center gap-6">
           <ul className="flex gap-16">
