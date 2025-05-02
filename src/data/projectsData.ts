@@ -1,9 +1,9 @@
 interface Testimonials {
   id: number
-  avatar?: string
-  description?: string
-  name?: string
-  profession?: string
+  avatar: string
+  description: string
+  name: string
+  profession: string
 }
 
 export const testimonials: Testimonials[] = [

@@ -16,3 +16,8 @@
     height: 20px;
     background-color: #1b1b1b;
 }
+
+.btn-feedback {
+    width: 50px;
+    height: 3px;
+}

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { testimonials } from "@/data/projectsData";
 import ButtonsTestimonials from "./ButtonsTestimonials";
 import {
@@ -6,40 +7,79 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
+
+
 export default function GroupTestimonials() {
+  const [emblaApi, setEmblaApi] = useState<any>(null); //CONCERTAR ESSE ERRO🥶
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setCurrentSlide(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on("select", onSelect);
+    onSelect(); // definir slide inicial
+
+    return () => {
+      emblaApi?.off("select", onSelect);
+    };
+  }, [emblaApi]);
+
   return (
-    <div className="flex flex-col justify-center items-center gap-5">
-      <div className="flex gap-10 justify-center items-center">
-        <Carousel>
+    <div className="flex flex-col justify-center items-center gap-5 mb-20">
+      <div className="flex gap-10 justify-center items-center w-full">
+        <Carousel setApi={setEmblaApi} className="w-full max-w-6xl">
           <CarouselContent>
-            <CarouselItem>
+            <CarouselItem className="flex gap-10 justify-center">
               {testimonials
                 .filter((item) => item.id <= 2)
                 .map((item) => (
                   <div
                     key={item.id}
-                    className="flex gap-3 w-[450px] h-[340px] bg-zinc-900 bg-opacity-60 p-5"
+                    className="flex flex-col w-[450px] h-[320px] bg-zinc-900 bg-opacity-60 px-5 py-3 rounded-md justify-center items-center"
                   >
-                    <img src={item.avatar} alt={item.name} className="w-[60px] h-[60px-px]"/>
+                    <img
+                      src={item.avatar}
+                      alt={item.name}
+                      className="w-[60px] h-[60px]"
+                    />
+                    <p className="text-center text-gray-300">{item.description}</p>
+                    <h2 className="text-3xl font-gurajada text-white">{item.name}</h2>
+                    <h3 className="font-gurajada text-2xl text-secondary">
+                      {item.profession?.toUpperCase()}
+                    </h3>
                   </div>
                 ))}
             </CarouselItem>
-            <CarouselItem>
+            <CarouselItem className="flex gap-10 justify-center">
               {testimonials
-                .filter((item) => item.id <= 4 && item.id > 2)
+                .filter((item) => item.id > 2 && item.id <= 4)
                 .map((item) => (
                   <div
                     key={item.id}
-                    className="flex flex-col gap-3 w-[450px] h-[340px] bg-zinc-900 bg-opacity-60 p-5"
+                    className="flex flex-col w-[450px] h-[320px] bg-zinc-900 bg-opacity-60 px-5 py-3 rounded-md justify-center items-center"
                   >
-                    ola mundo
+                    <img
+                      src={item.avatar}
+                      alt={item.name}
+                      className="w-[60px] h-[60px]"
+                    />
+                    <p className="text-center text-gray-300">{item.description}</p>
+                    <h2 className="text-3xl font-gurajada text-white">{item.name}</h2>
+                    <h3 className="font-gurajada text-2xl text-secondary">
+                      {item.profession?.toUpperCase()}
+                    </h3>
                   </div>
                 ))}
             </CarouselItem>
           </CarouselContent>
         </Carousel>
       </div>
-      <ButtonsTestimonials />
+      <ButtonsTestimonials currentSlide={currentSlide} />
     </div>
   );
 }
+
