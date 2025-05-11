@@ -8,6 +8,7 @@ import SeparatorProjects from "./components/SeparatorProjects";
 import TitleProjects from "./components/TitleProjects";
 import TitleFeed from "./components/TitleFeed";
 import GroupTestimonials from "./components/GroupTestimonials";
+import { Footer } from "@/components/Footer";
 
 const Projects = () => {
   
@@ -25,6 +26,7 @@ const Projects = () => {
         <TitleFeed />
         <GroupTestimonials />
       </GridContainer>
+      <Footer />
     </div>
   );
 };

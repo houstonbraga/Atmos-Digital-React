@@ -15,7 +15,8 @@ interface Projects {
 
 const projects: Projects[] = [
   {id: 1, url: "/project.jpg"},
-  {id: 2, url: "big-image-service.jpg"}
+  {id: 2, url: "./src/assets/images/project-houston.png"},
+  {id: 3, url: "./src/assets/images/project-avance.png"},
 ]
 
 export default function CarouselWebSites() {
@@ -40,14 +41,15 @@ export default function CarouselWebSites() {
         }}>
           <CarouselContent>
             {
-              [...projects, ...projects, ...projects].map((project) => (
+              [...projects, ...projects,].map((project) => (
                 <CarouselItem
                  key={project.id} 
-                 className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4 max-w-[350px] max-h-[180px]"
+                 className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4 max-w-[350px] max-h-[180px] w-350px h-180px"
                 >
                   <img
                    src={project.url}
                    alt="project"
+                   className="w-full h-full object-cover"
                   />
                 </CarouselItem>
               ))
