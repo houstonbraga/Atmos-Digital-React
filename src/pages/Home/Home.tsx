@@ -8,7 +8,7 @@ import './index.css'
 import BackgroundHome from "./components/BackgroundHome";
 export function Home() {
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen">
+    <div className="overflow-hidden relative flex flex-col items-center justify-center min-h-screen">
       <BackgroundHome />
       <Header />
       <ShadowBg variant="shadowCenter"/>
